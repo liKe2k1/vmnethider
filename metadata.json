@@ -1,0 +1,14 @@
+{
+  "description": "GNOME Extension to hide the vmnet Interfaces",
+  "name": "vmnethider",
+  "original-author": "Tobias Ehrig",
+  "shell-version": [
+    "3.18",
+    "3.20",
+    "3.22",
+    "3.28"
+  ],
+  "url": "https://github.com/liKe2k1/vmnethider",
+  "uuid": "me@t0by.eu",
+  "version": 1
+}
