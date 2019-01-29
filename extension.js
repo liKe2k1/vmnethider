@@ -22,7 +22,7 @@ const Mainloop = imports.mainloop;
 const Extension = imports.misc.extensionUtils.getCurrentExtension();
 
 let extensionName = Extension.dir.get_basename();
-let matchRegExp = /^Ethernet \(vmnet[a-z0-9]+\)|^$/i;
+let matchRegExp = /^Ethernet \(vmnet[a-z0-9]+\)$|^$/i;
 
 const VMNetHider = new Lang.Class({
     Name : 'vmnethider',
@@ -41,7 +41,7 @@ const VMNetHider = new Lang.Class({
 
         let _network = Main.panel.statusArea.aggregateMenu._network;
         if (_network) {
-            if (!_network._client || !_network._settings) {
+            if (!_network._client) {
                 if (this._nAttempts++ < 100) {
                     this._timeoutId = Mainloop.timeout_add(1000, Lang.bind(this, this._checkDevices));
                 }
