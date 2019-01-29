@@ -22,7 +22,7 @@ const Mainloop = imports.mainloop;
 const Extension = imports.misc.extensionUtils.getCurrentExtension();
 
 let extensionName = Extension.dir.get_basename();
-let matchRegExp = /^Ethernet \(vmnet[a-z0-9]+\)$|^$/i;
+let matchRegExp = /^Ethernet \(vmnet[a-z0-9]+\)|^$/i;
 
 const VMNetHider = new Lang.Class({
     Name : 'vmnethider',
