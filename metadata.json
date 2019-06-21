@@ -10,5 +10,6 @@
   ],
   "url": "https://github.com/liKe2k1/vmnethider",
   "uuid": "vmnethider@t0by.eu",
+  "gettext-domain": "gnome-shell-extensions",
   "version": 1
 }
